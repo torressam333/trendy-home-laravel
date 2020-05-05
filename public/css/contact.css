@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lato:ital@1&family=Pacifico&family=Quicksand:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.heading-contact{
+    color:#fff;
+    text-align: center;
+    padding-top: 0.9rem;
+    font-size: 2.8rem;
+    line-height: 0;
+}
+
+.lead-contact{
+    color: #fff;
+    font-size: 1.1rem;
+    padding-bottom: 0;
+}
+
+.contact-form{
+    background: url("../img/diy2.jpg") no-repeat top center;
+    width: 100%;
+    background-size: cover;
+    height: 100vh;
+    font-family: inherit;
+    opacity: 0.8;
+    padding: 100px 100px 100px 100px;
+    border-radius: 5px;
+    display: flex;
+    box-shadow: 0 0 10px rgba(0,0,0,0.13);
+}
+
+.input-fields{
+    display: flex;
+    flex-direction: column;
+    max-width: 650px;
+    margin: auto;
+}
+
+.input-fields{
+    width: 50%;
+}
+
+.msg{
+    width: 90vh;
+}
+
+.input-fields .input,
+.msg textarea{
+    margin: 20px 0;
+    border: 0;
+    border-bottom: 3px solid #edadbf;
+    font-size: 1.2rem;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.msg textarea{
+    height: 9rem;
+}
+
+::-webkit-input-placeholder{
+    color: #edadbf;
+    font-weight: 400;
+}
+
+::-ms-input-placeholder{
+    color: #edadbf;
+    font-weight: 400;
+}
+
+.social-icons{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    position: fixed;
+    bottom: 3.6rem;
+    left: 1rem;
+}
+
+/*Social Icon Hover*/
+a > svg > path:hover{
+    color: #c4aa6f;
+}
+.social-icons-list{
+    list-style-type: none !important;
+    line-height: 3;
+    padding-right: 10px;
+}
+
+.btn{
+    background: #edabbb;
+    padding: 10px;
+    font-size: 1.2rem;
+    border: 5px;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+    opacity: 0.8;
+}
+
+/*Responsive Layout*/
+@media screen and (min-width: 500px){
+    .contact{
+        height:500px;
+    }
+    .contact-form{
+        flex-direction: column;
+        padding-bottom: 2rem;
+        display: inline-block;
+        position: relative;
+    }
+    .msg {
+        width: 100% !important;
+    }
+
+    .input-fields{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 600px){
+    .contact-form{
+        flex-direction: column;
+    }
+    .msg textarea{
+        height: 80px;
+    }
+    .input-fields{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 720px){
+    .contact-form{
+        flex-direction: column;
+        width: 100%;
+    }
+    .msg{
+        width: 120vw;
+    }
+    .msg textarea{
+        height: 80px;
+    }
+    .input-fields{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .input-fields{
+        margin:0 auto;
+        width: 100%;
+    }
+    .contact{
+        width: 100%;
+    }
+
+    .lead-contact{
+        width: 100%;
+        text-align: center;
+        padding-bottom: 0;
+    }
+
+    .msg textarea {
+        height: 9rem;
+    }
+}
+
+@media screen and (max-width: 1750px) {
+    .contact-form{
+        width: 100%;
+    }
+
+    .lead-contact{
+        width: 100%;
+        text-align: center;
+        padding-bottom: 0;
+    }
+
+    .msg textarea {
+        height: 10rem;
+    }
+}
+
+
+/*Cross Browser Compatible*/
+
+::-webkit-input-placeholder {
+    font-size: 1.5rem;
+}
+::-moz-placeholder {
+    font-size: 1.5rem;
+}
+:-ms-input-placeholder { /* IE 10+ */
+    font-size: 1.5rem;
+}
+
+

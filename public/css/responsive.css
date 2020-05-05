@@ -1,0 +1,260 @@
+/*This file goes through responsive styling
+ from top to bottom
+*/
+
+/*Good for iphone 6 - iphone-x (plus sized included)*/
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px) {
+   /*Nav*/
+    #home > nav{
+        width: 101vw;
+    }
+
+    #home > nav > button{
+       font-size: .8rem;
+    }
+
+    .diy3text{
+        font-size: 10px;
+        left: -28px;
+    }
+
+    /*Padding for titles i.e. Project Gallery etc...*/
+    .heading{
+        padding-bottom: 1rem;
+    }
+
+    /*Initial pic caption*/
+    .caption{
+        top: 30%;
+    }
+
+    .caption h3 {
+        font-size: 1.9rem;
+    }
+
+    .lead{
+        font-size: 1.1rem;
+    }
+
+    .caption h1{
+        font-size: 2.8rem;
+    }
+
+    #subtitle{
+        font-size: 2.5rem;
+    }
+
+    /*About Buckets*/
+    #about > section{
+        width: 80vw;
+        margin: 0 auto;
+    }
+
+    /*Founder and co owner text*/
+    .infos .job{
+        font-size: 1.1rem;
+        line-height: .5;
+    }
+
+    .infos .read-more {
+        font-size: 0.9rem;
+    }
+
+
+    .title{
+        font-size: 2rem;
+    }
+
+    /*Projects*/
+    #projects{
+        margin: inherit;
+    }
+
+    .project-video{
+        width: 71vw;
+        height: 63vh;
+    }
+
+    /*Previous projects*/
+    .more-stuff-grid{
+       grid-template-columns:
+               minmax(5em, 1fr)
+               repeat(2, minmax(200px, 400px))
+               minmax( 1em, 1fr );
+        padding: 3rem 0;
+    }
+
+    .more-stuff-grid img{
+        border-radius: 15px;
+    }
+
+   .from-left{
+       grid-column: 1/3;
+       padding-left: 4rem;
+       width: 90vw;
+   }
+
+   .from-right{
+       grid-column: 1/3;
+       padding-left: 4rem;
+       width: 90vw;
+   }
+
+   .offset{
+       background-color: #e6f1ff;
+   }
+   #clients{
+       background-color: #e6f1ff;
+       margin: 5rem 0 0 0;
+       padding: 3rem 0 0 0;
+   }
+
+   #clients > h3{
+        color: #aa987e;
+   }
+
+    #clients > hr{
+
+    }
+
+    /*Projects*/
+    .my-slick{
+        width: 100%;
+    }
+
+   /*Contact Form*/
+    .heading-contact{
+        font-size: 2.2rem;
+        padding: 25px;
+    }
+    .contact-form{
+        padding: 0 3rem;
+        height: auto;
+    }
+    .contact-form > h3{
+        place-self: center;
+        width: 400px;
+    }
+
+    .contact-form > p{
+        padding: 0;
+        width: 80vw;
+        place-self: center;
+    }
+
+    div.input-fields{
+        font-size: 13px;
+
+    }
+
+    .input-fields,
+    .input,
+    .msg,
+    textarea{
+        margin: 10px 0;
+        width: auto;
+        font-size: 1rem;
+    }
+
+    .msg textarea {
+        height: 9rem;
+    }
+
+    /*Footer*/
+    footer img{
+        height: 7rem;
+        width: 7rem;
+    }
+
+    body > div.footer > footer > div > div > span{
+        font-size: 1rem;
+        top: 50px;
+        left: -30px;
+    }
+
+    hr.socket{
+        margin: 0 auto;
+    }
+
+    /*Social Icon Size*/
+    .fa-3x {
+        font-size: 2.5em;
+    }
+
+    .fa-3x:hover{
+        color: #c4aa6f;
+    }
+}
+
+/*IPAD SIZE*/
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+{ /* STYLES GO HERE */
+
+    #home > nav{
+        width: 100.5vw;
+    }
+
+    #home > nav > button{
+        font-size: 1.8rem;
+    }
+
+    .heading-contact{
+        font-size: 2.5rem;
+    }
+
+    #clients{
+        margin: 0 auto;
+        padding: 0 1rem;
+        backface-visibility: hidden;
+    }
+
+    #clients > h3{
+        width: 60vw;
+        padding: .5rem;
+        margin: 1rem auto;
+    }
+
+    .more-stuff-grid{
+        grid-template-columns:
+                minmax(5em, 1fr)
+                repeat(2, minmax(200px, 400px))
+                minmax( 1em, 1fr );
+        padding: 3rem 0;
+    }
+
+    .more-stuff-grid img{
+        border-radius: 15px;
+        align-items: center;
+    }
+
+    .from-left{
+        grid-column: 1/3;
+        padding-left: 4rem;
+        width: 90vw;
+    }
+
+    .from-right{
+        grid-column: 1/3;
+        padding-left: 4rem;
+        width: 90vw;
+    }
+
+    img.slide-in.from-left.appear,
+    img.slide-in.from-right.appear{
+        transform: translateX(9rem);
+    }
+
+    /*Footer logo text*/
+    body > div.footer > footer > div > div > span{
+        font-size: 20px;
+        top: 1.9rem;
+        position: inherit;
+        left: -25px;
+        font-weight: bolder;
+    }
+}
